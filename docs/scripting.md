@@ -29,12 +29,14 @@ Since this is a chat bot, the most common interactions are based on messages. Hu
 
 ```JavaScript
 module.exports = function(robot) {
-  robot.hear(/badger/i, function(res) {});
+  robot.hear(/badger/i, function(res) {
     // your code here
+  });
 
-  return robot.respond(/open the pod bay doors/i, function(res) {});
-};
+  return robot.respond(/open the pod bay doors/i, function(res) {
     // your code here
+  });
+};
 ```
 
 The `robot.hear(/badger/);` callback is called anytime a message's text matches. For example:
